@@ -1,0 +1,109 @@
+country,state,region,food,meal_type,diet_type,calories,protein,carbohydrates,fat,common_allergens,availability
+India,Andhra Pradesh,South India,Pesarattu,Breakfast,Vegetarian,180,8,28,5,none,High
+India,Andhra Pradesh,South India,Gongura Pappu,Lunch,Vegetarian,260,12,32,8,none,High
+India,Andhra Pradesh,South India,Pulihora,Lunch,Vegetarian,270,6,45,7,peanuts,High
+India,Arunachal Pradesh,Northeast India,Thukpa,Lunch,Non-Vegetarian,300,18,35,8,gluten,Medium
+India,Arunachal Pradesh,Northeast India,Momos,Lunch,Non-Vegetarian,280,12,32,10,gluten,High
+India,Arunachal Pradesh,Northeast India,Bamboo Shoot Curry,Lunch,Vegetarian,180,6,20,8,none,Medium
+India,Assam,Northeast India,Khar,Lunch,Non-Vegetarian,220,14,18,9,none,Medium
+India,Assam,Northeast India,Masor Tenga,Lunch,Non-Vegetarian,240,20,12,8,fish,High
+India,Assam,Northeast India,Pitha,Breakfast,Vegetarian,210,4,38,5,none,High
+India,Bihar,East India,Litti Chokha,Lunch,Vegetarian,320,10,48,10,gluten,High
+India,Bihar,East India,Sattu Paratha,Breakfast,Vegetarian,290,11,42,9,gluten,High
+India,Bihar,East India,Kadhi Badi,Lunch,Vegetarian,250,9,30,8,dairy,Medium
+India,Chhattisgarh,Central India,Faraa,Breakfast,190,6,35,3,none,Medium
+India,Chhattisgarh,Central India,Chila,Breakfast,210,8,30,6,none,High
+India,Chhattisgarh,Central India,Aamat,Lunch,Vegetarian,180,5,25,6,none,Medium
+India,Goa,West India,Goan Vegetable Xacuti,Lunch,Vegetarian,280,7,25,17,coconut,High
+India,Goa,West India,Fish Curry Rice,Lunch,Non-Vegetarian,340,24,42,9,fish,High
+India,Goa,West India,Sol Kadhi,Drink,Vegetarian,120,3,10,7,coconut,High
+India,Gujarat,West India,Thepla,Breakfast,Vegetarian,220,7,35,6,gluten,High
+India,Gujarat,West India,Undhiyu,Lunch,Vegetarian,280,8,30,12,none,Medium
+India,Gujarat,West India,Khichdi,Lunch,Vegetarian,240,9,40,5,none,High
+India,Haryana,North India,Bajra Khichdi,Lunch,Vegetarian,280,9,45,7,none,High
+India,Haryana,North India,Bajra Roti,Lunch,Vegetarian,220,7,40,4,none,High
+India,Haryana,North India,Kadhi Pakora,Lunch,Vegetarian,290,9,28,15,dairy,Medium
+India,Himachal Pradesh,Himalayan Region,Sidu,Breakfast,250,7,42,7,gluten,Medium
+India,Himachal Pradesh,Himalayan Region,Madra,Lunch,Vegetarian,280,10,30,13,dairy,Medium
+India,Himachal Pradesh,Himalayan Region,Dham,Lunch,Vegetarian,320,12,45,9,dairy,Medium
+India,Jharkhand,East India,Dhuska,Breakfast,240,7,38,7,none,High
+India,Jharkhand,East India,Rugra Curry,Lunch,Vegetarian,190,6,18,9,none,Medium
+India,Jharkhand,East India,Thekua,Snack,Vegetarian,230,4,35,8,gluten,High
+India,Karnataka,South India,Ragi Mudde,Lunch,Vegetarian,220,6,40,3,none,High
+India,Karnataka,South India,Bisi Bele Bath,Lunch,Vegetarian,300,9,48,7,none,High
+India,Karnataka,South India,Akki Roti,Breakfast,Vegetarian,230,5,38,7,none,High
+India,Kerala,South India,Appam,Breakfast,Vegetarian,180,4,34,3,none,High
+India,Kerala,South India,Avial,Lunch,Vegetarian,190,6,22,8,coconut,High
+India,Kerala,South India,Vegetable Stew,Lunch,Vegetarian,230,5,24,12,coconut,High
+India,Madhya Pradesh,Central India,Poha,Breakfast,Vegetarian,220,6,35,6,peanuts,High
+India,Madhya Pradesh,Central India,Dal Bafla,Lunch,Vegetarian,330,12,48,10,gluten,High
+India,Madhya Pradesh,Central India,Bhutte Ka Kees,Snack,Vegetarian,240,7,30,10,dairy,High
+India,Maharashtra,West India,Poha,Breakfast,Vegetarian,220,6,35,6,peanuts,High
+India,Maharashtra,West India,Thalipeeth,Breakfast,Vegetarian,250,8,38,7,gluten,High
+India,Maharashtra,West India,Bharli Vangi,Lunch,Vegetarian,240,6,25,13,peanuts,Medium
+India,Manipur,Northeast India,Eromba,Lunch,Non-Vegetarian,230,16,18,9,fish,Medium
+India,Manipur,Northeast India,Chamthong,Lunch,Vegetarian,160,6,20,5,none,Medium
+India,Manipur,Northeast India,Manipuri Singju,Snack,Vegetarian,150,5,18,6,none,Medium
+India,Meghalaya,Northeast India,Jadoh,Lunch,Non-Vegetarian,330,20,38,9,none,High
+India,Meghalaya,Northeast India,Dohneiihong,Lunch,Non-Vegetarian,350,22,15,22,none,Medium
+India,Meghalaya,Northeast India,Pukhlein,Snack,Vegetarian,230,4,38,7,gluten,Medium
+India,Mizoram,Northeast India,Bai,Lunch,Vegetarian,170,7,18,7,none,Medium
+India,Mizoram,Northeast India,Vawksa Rep,Lunch,Non-Vegetarian,300,22,8,19,none,Medium
+India,Mizoram,Northeast India,Chhum Han,Lunch,Vegetarian,140,5,18,4,none,Medium
+India,Nagaland,Northeast India,Smoked Pork Curry,Lunch,Non-Vegetarian,360,24,10,25,none,Medium
+India,Nagaland,Northeast India,Naga Vegetable Stew,Lunch,Vegetarian,170,6,20,6,none,Medium
+India,Nagaland,Northeast India,Bamboo Shoot Pork,Lunch,Non-Vegetarian,340,23,12,22,none,Medium
+India,Odisha,East India,Dalma,Lunch,Vegetarian,240,11,35,5,none,High
+India,Odisha,East India,Pakhala Bhata,Lunch,Vegetarian,210,5,38,3,dairy,High
+India,Odisha,East India,Chhena Poda,Dessert,Vegetarian,280,9,32,13,dairy,High
+India,Punjab,North India,Rajma Chawal,Lunch,Vegetarian,360,14,62,6,none,High
+India,Punjab,North India,Chole,Lunch,Vegetarian,300,13,45,7,none,High
+India,Punjab,North India,Missi Roti,Lunch,Vegetarian,230,8,35,6,gluten,High
+India,Rajasthan,North India,Dal Baati Churma,Lunch,Vegetarian,390,12,58,14,gluten,High
+India,Rajasthan,North India,Gatte Ki Sabzi,Lunch,Vegetarian,280,10,28,12,gluten,High
+India,Rajasthan,North India,Bajra Roti,Lunch,Vegetarian,220,7,40,4,none,High
+India,Sikkim,Northeast India,Momos,Lunch,Non-Vegetarian,280,12,32,10,gluten,High
+India,Sikkim,Northeast India,Thukpa,Lunch,Vegetarian,250,8,36,7,gluten,High
+India,Sikkim,Northeast India,Gundruk Soup,Lunch,Vegetarian,130,5,15,4,none,Medium
+India,Tamil Nadu,South India,Veg Pongal,Breakfast,Vegetarian,240,7,35,8,none,High
+India,Tamil Nadu,South India,Lemon Rice,Lunch,Vegetarian,270,5,43,8,peanuts,High
+India,Tamil Nadu,South India,Sambar Rice,Lunch,Vegetarian,280,10,46,5,none,High
+India,Telangana,South India,Hyderabadi Vegetable Biryani,Lunch,Vegetarian,320,8,52,9,dairy,High
+India,Telangana,South India,Vegetable Dalcha,Lunch,Vegetarian,250,11,30,7,none,Medium
+India,Telangana,South India,Jonna Roti,Lunch,Vegetarian,210,6,38,4,none,Medium
+India,Tripura,Northeast India,Chakhwi,Lunch,Non-Vegetarian,230,15,20,8,fish,Medium
+India,Tripura,Northeast India,Mui Borok,Lunch,Non-Vegetarian,250,18,15,10,fish,Medium
+India,Tripura,Northeast India,Vegetable Curry,Lunch,Vegetarian,210,6,25,8,none,Medium
+India,Uttar Pradesh,North India,Awadhi Pulao,Lunch,Vegetarian,290,7,48,7,none,High
+India,Uttar Pradesh,North India,Kachori,Breakfast,Vegetarian,300,7,38,13,gluten,High
+India,Uttar Pradesh,North India,Chole Bhature,Lunch,Vegetarian,420,12,58,16,gluten,High
+India,Uttarakhand,Himalayan Region,Kafuli,Lunch,Vegetarian,180,8,18,7,none,Medium
+India,Uttarakhand,Himalayan Region,Aloo Ke Gutke,Lunch,Vegetarian,220,5,32,7,none,High
+India,Uttarakhand,Himalayan Region,Jhangora Ki Kheer,Dessert,Vegetarian,240,7,35,8,dairy,Medium
+India,West Bengal,East India,Moong Dal Khichuri,Lunch,Vegetarian,280,10,45,6,none,High
+India,West Bengal,East India,Shukto,Lunch,Vegetarian,180,5,20,8,none,Medium
+India,West Bengal,East India,Luchi,Breakfast,Vegetarian,300,6,40,12,gluten,Medium
+India,Andaman and Nicobar Islands,Island Region,Fish Curry Rice,Lunch,Non-Vegetarian,340,24,42,9,fish,High
+India,Andaman and Nicobar Islands,Island Region,Coconut Vegetable Curry,Lunch,Vegetarian,240,6,25,14,coconut,Medium
+India,Andaman and Nicobar Islands,Island Region,Grilled Fish,Lunch,Non-Vegetarian,220,28,2,8,fish,High
+India,Chandigarh,North India,Chole Bhature,Lunch,Vegetarian,420,12,58,16,gluten,High
+India,Chandigarh,North India,Rajma Chawal,Lunch,Vegetarian,360,14,62,6,none,High
+India,Chandigarh,North India,Stuffed Paratha,Breakfast,Vegetarian,320,9,45,12,gluten,High
+India,Dadra and Nagar Haveli and Daman and Diu,West India,Ubadiyu,Lunch,Vegetarian,280,8,30,12,none,Medium
+India,Dadra and Nagar Haveli and Daman and Diu,West India,Vegetable Curry,Lunch,Vegetarian,220,6,25,9,none,Medium
+India,Dadra and Nagar Haveli and Daman and Diu,West India,Fish Curry,Lunch,Non-Vegetarian,300,22,12,16,fish,Medium
+India,Delhi,North India,Chole Kulche,Breakfast,Vegetarian,350,12,55,9,gluten,High
+India,Delhi,North India,Veg Pulao,Lunch,Vegetarian,280,6,48,6,none,High
+India,Delhi,North India,Dal Tadka,Lunch,Vegetarian,250,12,30,8,none,High
+India,Jammu and Kashmir,Himalayan Region,Rajma Rice,Lunch,Vegetarian,330,14,55,6,none,High
+India,Jammu and Kashmir,Himalayan Region,Dum Aloo,Lunch,Vegetarian,280,6,30,14,dairy,High
+India,Jammu and Kashmir,Himalayan Region,Haak Saag,Lunch,Vegetarian,150,6,15,6,none,Medium
+India,Ladakh,Himalayan Region,Thukpa,Lunch,Vegetarian,250,8,36,7,gluten,Medium
+India,Ladakh,Himalayan Region,Momos,Lunch,Vegetarian,270,8,35,10,gluten,High
+India,Ladakh,Himalayan Region,Tsampa,Breakfast,Vegetarian,220,8,38,5,gluten,Medium
+India,Lakshadweep,Island Region,Fish Curry Rice,Lunch,Non-Vegetarian,340,25,40,10,fish,High
+India,Lakshadweep,Island Region,Coconut Rice,Lunch,Vegetarian,290,5,48,9,coconut,High
+India,Lakshadweep,Island Region,Grilled Tuna,Lunch,Non-Vegetarian,220,30,2,8,fish,High
+India,Puducherry,South India,Dosa,Breakfast,Vegetarian,210,6,34,5,none,High
+India,Puducherry,South India,Vegetable Sambar,Lunch,Vegetarian,180,8,25,5,none,High
+India,Puducherry,South India,Coconut Rice,Lunch,Vegetarian,290,5,48,9,coconut,High
