@@ -1,218 +1,228 @@
-# SmartHealth AI 🧠🥗
+# SmartHealth AI 🩺
 
-**Explainable, Region-Aware Health & Wellness Intelligence Platform**
+### Explainable, Region-Aware Health & Wellness Intelligence Platform
 
-SmartHealth AI is an AI/ML-based health and wellness platform that combines symptom-pattern analysis, explainability, nutrition intelligence, regional food recommendations, allergy filtering, personalized meal planning, traditional wellness information, knowledge retrieval, and user history in a single application.
+SmartHealth AI is a machine-learning-powered health and wellness platform that combines **symptom pattern analysis, explainability, nutrition intelligence, regional food recommendations, traditional wellness knowledge, personalized meal planning, safety filtering, and user history** in a single application.
 
-> **Important:** SmartHealth AI is an educational and wellness-support system. Its model outputs are model-generated possibilities based on the training data and are **not medical diagnoses or medical advice**.
-
----
-
-## 🚀 Problem
-
-Health-related information is often scattered across different applications:
-
-* Symptom analysis is separated from nutrition planning.
-* Food recommendations may not consider region or dietary preferences.
-* Allergy restrictions are often handled manually.
-* Traditional wellness information is difficult to organize and retrieve.
-* Users have limited history and progress tracking across these activities.
-
-SmartHealth AI combines these capabilities into one modular platform.
+> **Important:** SmartHealth AI is an educational and decision-support prototype. Its predictions are model-generated possibilities based on the available dataset and are **not medical diagnoses or medical advice**. Users should consult qualified healthcare professionals for medical concerns.
 
 ---
 
-## 💡 Solution
+## 🚀 Project Overview
 
-The platform provides a connected workflow:
+Many basic health applications only provide a disease prediction from selected symptoms.
+
+SmartHealth AI goes beyond a simple prediction model by combining multiple intelligence layers:
 
 ```text
-User Profile
-     ↓
-Symptom Analysis
-     ↓
-Top Model-Generated Possibilities
-     ↓
+User Symptoms
+      ↓
+Symptom Preprocessing
+      ↓
+ML-Based Pattern Analysis
+      ↓
+Top Possible Condition Patterns
+      ↓
 Explainability
-     ↓
-Nutrition Profile
-     ↓
+      ↓
+Nutrition & Wellness Intelligence
+      ↓
 Regional Food Recommendations
-     ↓
-Allergy & Diet Filtering
-     ↓
-Personalized Meal Plan
-     ↓
-History & Progress
+      ↓
+Allergy & Safety Filtering
+      ↓
+Personalized Meal Planning
+      ↓
+History & Progress Tracking
 ```
 
-The application also provides separate knowledge-based wellness sections for Ayurveda and homeopathy.
+The goal is to demonstrate how machine learning, structured knowledge, personalization, and safety-aware filtering can be combined into a practical software product.
 
 ---
 
 ## ✨ Key Features
 
-### 🧠 1. Symptom Analysis
+### 1. 🧠 Symptom Analysis
 
-Users select symptoms from the application's symptom vocabulary.
+Users can select multiple symptoms and receive:
 
-The machine-learning model provides:
-
-* Primary model output
+* Primary model-generated condition pattern
 * Top possible condition patterns
-* Probability values where supported
+* Probability estimates from the trained model
 * Selected symptom summary
+* Explainability information
+* Safety guidance
 
-The output is explicitly presented as a **model-generated possibility**, not a diagnosis.
-
----
-
-### 🔍 2. Model Explainability
-
-The application displays feature-importance information for selected symptoms when supported by the trained model.
-
-This helps users understand which selected input features contributed to the model's output.
+The system does **not** present the prediction as a medical diagnosis.
 
 ---
 
-### 🥗 3. Nutrition Intelligence
+### 2. 🔍 Explainable Predictions
 
-The platform calculates:
+Instead of only displaying a prediction, SmartHealth AI provides information about the symptom patterns associated with the model's output.
 
-* BMI
-* BMI category
-* BMR
-* Estimated TDEE
-
-It also provides condition-aware food recommendations using nutritional attributes.
+This makes the result easier to understand and demonstrates an explainable-AI workflow.
 
 ---
 
-### 🌎 4. Region-Aware Food Recommendations
+### 3. 🥗 Nutrition Intelligence
 
-Food recommendations can be filtered using:
+The platform provides nutrition-related recommendations based on available condition and food information.
+
+The nutrition module can consider:
+
+* Food categories
+* Nutritional characteristics
+* User preferences
+* Dietary restrictions
+* Allergies
+* Regional availability
+
+Nutrition values and recommendations are treated as estimates/information rather than medical prescriptions.
+
+---
+
+### 4. 🌎 Region-Aware Food Recommendations
+
+Food recommendations can be filtered according to the user's:
 
 * Country
-* State
-* Region
-* Diet type
-* Calories
-* Protein
-* Allergies
+* State/region
+* Dietary preferences
+* Available food options
 
-This allows the recommendation system to consider food availability and dietary preferences.
+This makes the recommendation system more personalized than a generic food list.
 
 ---
 
-### 🚨 5. Allergy Safety Filtering
+### 5. 🌿 Traditional Wellness Knowledge
 
-The platform identifies foods containing specified allergens and removes them from recommended food results.
-
-Supported allergen categories include examples such as:
-
-* Peanut
-* Milk
-* Egg
-* Fish
-* Shellfish
-* Gluten
-* Soy
-* Tree nuts
-* Coconut
-
----
-
-### 🍽️ 6. Personalized Meal Planning
-
-The system generates meal plans containing:
-
-* Breakfast
-* Lunch
-* Snack
-* Dinner
-
-Meal plans are generated using available food data, nutritional requirements, diet preferences, and allergy restrictions.
-
----
-
-### 🌿 7. Traditional Wellness Knowledge
-
-Separate knowledge modules provide informational references for:
+SmartHealth AI contains separate knowledge modules for:
 
 * Ayurveda
 * Homeopathy
 
-These sections are presented as **traditional/educational information** and are not represented as proven medical treatments.
+These sections are provided for **traditional and educational information**.
+
+The platform does not claim that traditional remedies cure diseases or replace evidence-based medical treatment.
 
 ---
 
-### 📚 8. Knowledge Retrieval
+### 6. 🤖 Knowledge Retrieval / RAG Layer
 
-SmartHealth AI includes a local knowledge-retrieval layer that searches project knowledge documents and returns relevant information.
+The project includes a knowledge-retrieval architecture for retrieving relevant information from structured wellness and safety knowledge sources.
 
-The current implementation uses lightweight local retrieval rather than claiming clinical-grade semantic retrieval.
+The retrieval layer can be used to provide context for:
 
----
+* Nutrition information
+* Traditional wellness information
+* Safety guidance
+* Food recommendations
 
-### 🗃️ 9. User History
-
-SQLite is used to store application history such as:
-
-* Symptom analyses
-* Selected symptoms
-* Model output
-* Meal plans
-* Nutrition-related meal information
-* Creation timestamps
-
-Timestamps are stored using Indian Standard Time (IST).
+This separates knowledge retrieval from the ML prediction layer.
 
 ---
 
-### 📊 10. Progress Dashboard
+### 7. ⚠️ Allergy & Safety Filtering
 
-The application provides:
+The application includes safety-oriented filtering to reduce inappropriate food recommendations.
 
-* Analysis history
-* Prediction summaries
-* Recent activity
-* Progress information
+The system can consider:
+
+* User allergies
+* Dietary restrictions
+* Food compatibility
+* Safety information
+
+Safety information is presented conservatively and does not replace professional medical advice.
+
+---
+
+### 8. 🍱 Personalized Meal Planning
+
+Users can generate meal plans using available food and nutrition information.
+
+The meal-planning module can incorporate:
+
+* Food preferences
+* Regional foods
+* Dietary restrictions
+* Allergy filtering
+* Nutrition information
+
+Generated plans are informational and should not be treated as prescribed diets.
+
+---
+
+### 9. 📊 Dashboard
+
+The dashboard provides an overview of the user's activity and available health/wellness information.
+
+It connects different parts of the platform into a single interface.
+
+---
+
+### 10. 🕒 History Tracking
+
+Previous symptom analyses and meal plans can be stored in the application database.
+
+This allows users to review previous activity instead of treating every session as completely independent.
+
+---
+
+### 11. 📈 Progress Tracking
+
+The progress section provides a way to review historical activity and observe changes in recorded information over time.
+
+---
+
+### 12. 👤 User Profile
+
+The platform can store basic user information required for personalization, such as:
+
+* Name
+* Age
+* Gender
+* Country
+* State/region
+
+Only information required by the application should be provided by the user.
 
 ---
 
 ## 🏗️ System Architecture
 
 ```text
-                    ┌─────────────────────┐
-                    │   Streamlit UI      │
-                    └──────────┬──────────┘
-                               │
-          ┌────────────────────┼────────────────────┐
-          │                    │                    │
-          ▼                    ▼                    ▼
-   Symptom Analysis       Nutrition Engine      Wellness
-          │                    │                    │
-          ▼                    ▼                    ▼
-    ML Model             Food Engine        Knowledge Base
-          │                    │                    │
-          └──────────────┬─────┴────────────────────┘
-                         │
-                         ▼
-                Allergy/Safety Layer
-                         │
-                         ▼
-                  Meal Plan Engine
-                         │
-                         ▼
-                    SQLite DB
-                         │
-                         ▼
-                 History / Progress
+                         ┌─────────────────────┐
+                         │      Streamlit      │
+                         │    User Interface   │
+                         └──────────┬──────────┘
+                                    │
+                 ┌──────────────────┼──────────────────┐
+                 │                  │                  │
+                 ▼                  ▼                  ▼
+        ┌────────────────┐ ┌────────────────┐ ┌────────────────┐
+        │ Symptom        │ │ Nutrition &    │ │ Wellness       │
+        │ Analysis       │ │ Meal Planning  │ │ Knowledge      │
+        └───────┬────────┘ └───────┬────────┘ └───────┬────────┘
+                │                  │                  │
+                ▼                  ▼                  ▼
+        ┌────────────────┐ ┌────────────────┐ ┌────────────────┐
+        │ ML Model       │ │ Safety /       │ │ RAG / Knowledge│
+        │                │ │ Allergy Filter │ │ Retrieval      │
+        └───────┬────────┘ └───────┬────────┘ └────────────────┘
+                │                  │
+                └──────────┬───────┘
+                           ▼
+                  ┌─────────────────┐
+                  │ SQLite Database │
+                  │ History/Profile │
+                  └─────────────────┘
 ```
 
 ---
 
-## 🛠️ Technology Stack
+## 🧰 Technology Stack
 
 ### Frontend / Application
 
@@ -222,26 +232,27 @@ The application provides:
 ### Machine Learning
 
 * Scikit-learn
-* Decision Tree Classifier
-* NumPy
 * Pandas
+* NumPy
 * Joblib
 
-### Data & Storage
+### Database
 
-* CSV datasets
 * SQLite
 
-### Knowledge & Retrieval
+### AI / Intelligence
 
-* Local Markdown/Text knowledge base
-* Lightweight retrieval engine
+* Machine Learning
+* Explainable prediction workflow
+* Knowledge retrieval / RAG architecture
+* Rule-based safety filtering
 
 ### Development
 
 * VS Code
 * Git
 * GitHub
+* Python Virtual Environment
 
 ---
 
@@ -256,9 +267,9 @@ SmartHealth-AI/
 ├── .gitignore
 │
 ├── model/
+│   ├── train_model.py
 │   ├── disease_model.pkl
-│   ├── model_metadata.json
-│   └── evaluate_model.py
+│   └── model_metadata.json
 │
 ├── data/
 │   ├── symptoms_disease_dataset_40.csv
@@ -268,8 +279,7 @@ SmartHealth-AI/
 │   └── homeopathy_knowledge.csv
 │
 ├── database/
-│   ├── database.py
-│   └── smarthealth.db
+│   └── database.py
 │
 ├── modules/
 │   ├── symptom_analyzer.py
@@ -277,14 +287,11 @@ SmartHealth-AI/
 │   ├── explainability.py
 │   ├── nutrition.py
 │   ├── regional_recommendations.py
-│   ├── condition_nutrition.py
-│   ├── allergy_filter.py
 │   ├── ayurveda.py
 │   ├── homeopathy.py
 │   ├── meal_planner.py
 │   ├── safety.py
-│   ├── rag_engine.py
-│   └── history.py
+│   └── rag_engine.py
 │
 ├── pages/
 │   ├── dashboard.py
@@ -306,128 +313,153 @@ SmartHealth-AI/
 
 ---
 
-## ▶️ Running the Project
+## ⚙️ Installation
 
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/komali2809/SmartHealth-AI.git
+```
+
+### 2. Open the project
+
+```bash
 cd SmartHealth-AI
 ```
 
-### 2. Create a virtual environment
+### 3. Create a virtual environment
 
 ```bash
-python -m venv venv
+python -m venv .venv
 ```
 
-### 3. Activate it on Windows
+### 4. Activate the environment
+
+#### Windows
 
 ```bash
-venv\Scripts\activate
+.venv\Scripts\activate
 ```
 
-### 4. Install dependencies
+#### Linux / macOS
+
+```bash
+source .venv/bin/activate
+```
+
+### 5. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. Run the application
+### 6. Run the application
 
 ```bash
 streamlit run app.py
 ```
 
-The application will open in the browser.
-
----
-
-## 🔐 Privacy & Security
-
-The project follows basic privacy practices:
-
-* API keys are not stored directly in source code.
-* `.env` files are excluded from Git.
-* SQLite database files are excluded from Git.
-* Python cache files are excluded from Git.
-* User history is stored locally by the application.
-* Health-related outputs contain safety disclaimers.
-
-Sensitive information should not be entered into a publicly deployed version unless appropriate privacy and security controls have been implemented.
-
----
-
-## ⚠️ Model & Dataset Limitations
-
-The current prototype dataset contains a small number of records relative to the number of condition classes.
-
-Therefore:
-
-* Conventional train/test metrics are not sufficient to establish clinical performance.
-* The model should not be interpreted as a medically validated diagnostic system.
-* Predictions depend entirely on the available training data.
-* Real-world clinical use would require substantially larger and clinically validated datasets.
-* External medical validation would be required before any diagnostic application.
+The application will open in your browser.
 
 ---
 
 ## 🧪 Testing
 
-The application was manually tested through the Streamlit interface.
+SmartHealth AI can be tested directly through the Streamlit interface.
 
-Major workflows tested include:
+### Symptom Analysis
 
-* Symptom selection and analysis
-* Multiple model-generated outputs
-* Explainability
-* Nutrition calculations
-* Regional food filtering
-* Allergy filtering
-* Meal-plan generation
-* Database history
-* Progress display
-* Ayurveda knowledge search
-* Homeopathy knowledge search
-* Dashboard
-* Profile
+1. Open Symptom Analysis.
+2. Enter the required profile information.
+3. Select symptoms.
+4. Run the analysis.
+5. Review the generated condition patterns.
+6. Review explainability and safety information.
 
----
+### Meal Planning
 
-## 🔮 Future Improvements
+1. Open Meal Plan.
+2. Provide the required information.
+3. Generate a meal plan.
+4. Verify that allergy/diet restrictions are considered.
 
-Possible future improvements include:
+### History
 
-* Larger and higher-quality datasets
-* Cross-validation and stronger model evaluation
-* Embedding-based semantic retrieval
-* Improved personalized nutrition optimization
-* Secure authentication
-* Encrypted sensitive data storage
-* Role-based access control
-* Stronger privacy controls
-* Evidence-linked knowledge sources
-* Clinician-reviewed datasets and validation
-* More advanced recommendation models
+1. Perform a symptom analysis.
+2. Save the result.
+3. Open History.
+4. Verify that the analysis appears with its recorded timestamp.
+
+### Progress
+
+1. Generate multiple records.
+2. Open Progress.
+3. Review the recorded activity.
 
 ---
 
-## 👩‍💻 Project
+## 🔐 Privacy & Security
 
-**SmartHealth AI**
+SmartHealth AI is designed to minimize unnecessary exposure of user information.
 
-**Domain:** Artificial Intelligence / Machine Learning / Health & Wellness Technology
+Security considerations include:
 
-**Core Technologies:** Python, Streamlit, Scikit-learn, Pandas, NumPy, SQLite, RAG/Knowledge Retrieval
+* Local SQLite storage during development
+* No API keys committed to Git
+* `.env` excluded through `.gitignore`
+* Database files excluded from Git
+* Python virtual environment excluded from Git
+* Separation of application modules
+* Safety filtering before presenting recommendations
+
+Example `.gitignore` entries:
+
+```text
+.env
+*.db
+database/*.db
+.venv/
+__pycache__/
+*.pyc
+```
+
+For production deployment, additional controls such as authentication, encrypted storage, HTTPS, access control, secure secrets management, database security, logging policies, and data-retention controls would be required.
 
 ---
 
-## ⚕️ Safety Notice
+## ⚠️ Model & Dataset Limitations
 
-SmartHealth AI is intended for educational and wellness-support purposes.
+The current prototype uses a relatively small symptom dataset containing approximately 40 condition classes.
 
-Its symptom-analysis results are **model-generated possibilities**, not medical diagnoses.
+Because the dataset is limited, the model should **not** be interpreted as clinically accurate or medically validated.
 
-Ayurvedic and homeopathic information is presented for traditional and educational reference and should not be treated as proven medical treatment.
+The model output represents:
 
-For severe, persistent, or rapidly worsening symptoms, users should seek appropriate professional medical care.
+> A machine-learning-generated symptom pattern based on the available training data.
+
+It should not be used to diagnose, treat, or rule out a medical condition.
+
+A production medical system would require substantially larger and clinically validated datasets, rigorous evaluation, external validation, bias analysis, clinical review, and appropriate regulatory compliance.
+
+---
+
+## 🧠 Engineering Highlights
+
+This project demonstrates the integration of multiple software and AI concepts:
+
+* Machine-learning classification
+* Feature preprocessing
+* Explainable prediction
+* Structured knowledge retrieval
+* RAG architecture
+* Rule-based safety filtering
+* Recommendation systems
+* Personalization
+* Regional filtering
+* Meal planning
+* SQLite persistence
+* Multi-page Streamlit architecture
+* Modular Python development
+* Git/GitHub version control
+
+Rather than implementing only a disease classifier, the project combines th
